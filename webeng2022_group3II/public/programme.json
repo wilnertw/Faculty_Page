@@ -1,0 +1,62 @@
+[
+    {
+     "id":"1",
+     "name":"Undergraduate",
+     "parent_id":"0"
+    }, 
+    {
+     "id":"2",
+     "name":"Postgraduate",
+     "parent_id":"0"
+    },  
+    {
+     "id":"3",
+     "name":"UH6481001 Software Engineering",
+     "parent_id":"1"
+    },  
+    {
+     "id":"4",
+     "name":"UH6481002 Network Engineering",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"5",
+     "name":"UH6481005 Data Science",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"6",
+     "name":"UH6481003 Multimedia Technology",
+     "parent_id":"1"
+    }, 
+    {
+     "id":"7",
+     "name":"UH6481004 Business Computing",
+     "parent_id":"1"
+    },
+    {
+    "id":"8",
+    "name":"Doctor of Philosophy (Computer Science)",
+    "parent_id":"2"
+    },
+    {
+    "id":"9",
+    "name":"Doctor of Philosophy (Information Technology)",
+    "parent_id":"2"
+    },
+    {
+    "id":"10",
+    "name":"Master of Science (Computer Science)",
+    "parent_id":"2"
+    },
+    {
+    "id":"11",
+    "name":"Master of Science (Information Technology)",
+    "parent_id":"2"
+    },
+    {
+    "id":"12",
+    "name":"Master of Computer Science (Computational Intelligence)",
+    "parent_id":"2"
+    }                      
+]

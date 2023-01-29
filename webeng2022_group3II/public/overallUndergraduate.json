@@ -1,0 +1,12 @@
+{"UNDERGRADUATE":[
+        {"NAME": "Bachelor Of Computer Science with Honours (Software Engineering)", "CODE":"UH6481001 /HC 00", "CAMPUS":"UMS Kota Kinabalu", 
+            "DESCRIPTION": "The courses offered include computer programming, object-oriented programming, software quality and testing, human computer interaction, theory of computation, operating system, artificial intelligence, final year project, to name a few."},
+        {"NAME": "Bachelor of Computer Science with Honours (Network Engineering)", "CODE":"UH6481002 / HC 05", "CAMPUS":"UMS Kota Kinabalu", 
+            "DESCRIPTION": "The offered courses in the programme are in line with the Cisco, IEEE and ACM computing syllabus. The courses include computer programming, system analysis and design, database, network fundamentals, routing protocols, parallel and distributed computing, web technology, network security, WAN technology and etc."},
+        {"NAME": "Bachelor of Information Technology with Honours (Multimedia Technology)", "CODE":"UH6481003/HC 12", "CAMPUS":"UMS Labuan International Campus", 
+            "DESCRIPTION": "This programme will provide students with skills in the areas of interactive media, graphics arts, audio technology, animation, video and publishing."},
+        {"NAME": "Bachelor of Information Technology with Honours (Business Computing)", "CODE":"UH6481004 / HC 13", "CAMPUS":"UMS Labuan International Campus", 
+            "DESCRIPTION": "This degree pogram will emphasises instruction in computer literacy, Business Computing web development, programming and internet marketing. This program follows the currents environment on business computing technologies."},
+        {"NAME": "Bachelor Degree in Computer Science (Data Science) with Honours", "CODE":"HC 14", "CAMPUS":"UMS Kota Kinabalu", 
+            "DESCRIPTION": "Among the courses offered include computer programming, data science basics, data visualization, data analysis, data mining, analysis and system design for data science, and other programming languages."}]
+}

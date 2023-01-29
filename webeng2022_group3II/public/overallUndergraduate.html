@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Overall Undergraduate Programmes - Faculty of Computing and Informatics</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Overall Undergraduate Programme - Faculty of Computing and Informatics">
+        <meta name="keywords" content="Undergraduate Programme, Faculty of Computing and Informatics, FKI, FCI, UMS">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        
+        <!--------------- tab icon --------------->
+        <link rel="icon" href="img/fki-logo.png">
+        
+        <!---------------icons---------------->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/26a60321dc.js" crossorigin="anonymous"></script> 
+        <!-- ^^^ stefanie's fontawesome link ^^^ -->
+
+        <!---------------- CSS --------------->
+       <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <body>
+        <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+                var myObj = JSON.parse(this.responseText);
+                var table="<thead><tr><th>PROGRAMME NAME</th><th>CODE</th><th>CAMPUS</th><th>DESCRIPTION</th></tr></thead>";
+                for(i in myObj.UNDERGRADUATE){
+                    "<tbody>"
+                    table += "<tr><td>" + 
+                    myObj.UNDERGRADUATE[i].NAME +
+                    "</td><td>" +
+                    myObj.UNDERGRADUATE[i].CODE +
+                    "</td><td>" +
+                    myObj.UNDERGRADUATE[i].CAMPUS + 
+                    "</td><td>" +
+                    myObj.UNDERGRADUATE[i].DESCRIPTION +
+                "</tbody>"}
+                document.getElementById("demo").innerHTML = table;
+            }
+        };
+        xmlhttp.open("GET","overallUndergraduate.json");
+        xmlhttp.send();
+        </script>
+
+        <!------------- header section ------------->
+        <header class="header" id="header">
+            <nav class="nav nav-container">
+                <a href="#" class="nav-logo"><img src="img/long-logo.png" alt="logo"></a>
+
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link ">HOME</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">ABOUT</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link active-link">ACADEMIC</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">EVENT</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">FAQs</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">CONTACT</a></li>
+                    </ul>
+                
+                    <!-- close nav button -->
+                    <div class="nav-close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                <!-- burger -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i> 
+                </div>
+            </nav>
+        </header>
+        
+        <!-- Table -->
+        <section class="oUndergraduate" >
+            <div class="table undergraduate">
+                    <div class="container">
+                <h1 class="section-title-center section-title">Overall Undergraduate Programme</h1>
+                <table id="demo" class="undergraduate-table"></table>
+            </div>
+            </div>
+            
+        </section>
+        
+
+        <!--------------- Footer --------------->
+        <footer class="footer section">
+            <div class="footer-container container grid">
+                <div class="footer-content">
+                    <a href="#" class="footer-logo"><img src="./img/fki-long.png" alt="logo"></a>
+                    <p style="color: #fff; padding-bottom: 1rem;">
+                        FCI realising the merged role of information and communication technology towards a borderless world. 
+                    </p>
+        
+                    <div class="footer-subscribe">
+                        <a href="" class="button button-flex footer-button">Subscribe for e-news<i class="bi bi-newspaper button-icon"></i></a>
+                    </div>
+                </div>
+        
+                <div class="footer-content">
+                    <h3 class="footer-title">More</h3>
+        
+                    <ul class="footer-data">
+                        <li class="footer-information"><a href="#" class="more-info">About us<i class="bi bi-caret-right"></i></a></li>
+                        <li class="footer-information"><a href="#" class="more-info">Undergraduate<i class="bi bi-caret-right"></i></a></li>
+                        <li class="footer-information"><a href="#" class="more-info">Postgraduate<i class="bi bi-caret-right"></i></a></li>
+                        <li class="footer-information"><a href="#" class="more-info">Contact<i class="bi bi-caret-right"></i></a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-content">
+                    <h3 class="footer-title">Contact Us</h3>
+        
+                    <ul class="footer-data">
+                        <li class="footer-information"><i class="bi bi-telephone "></i>&ensp;087-503000 (Labuan)</li>
+                        <li class="footer-information"><i class="bi bi-telephone"></i>&ensp;088-320000 (Kota Kinabalu)</li>
+                        <li class="footer-information"><i class="bi bi-envelope"></i></i><a href = "mailto: pejfki@ums.edu.my">&ensp;pejfki@ums.edu.my</a></li>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/" class="footer-social-link"><i class="bi bi-facebook footer-icon"></i></a>
+                            <a href="https://www.instagram.com/" class="footer-social-link"><i class="bi bi-instagram footer-icon"></i></a>
+                            <a href="https://twitter.com/" class="footer-social-link"><i class="bi bi-linkedin footer-icon"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        
+            <p class="footer-copy">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+        </footer>
+        
+        <!--------------- Scroll up --------------->
+        <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-fill scrollup-icon"></i></a>
+
+        <!--------------- Javascript--------------->
+        <script src="js/scrollreveal.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
